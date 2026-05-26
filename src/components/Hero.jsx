@@ -89,7 +89,7 @@ const Hero = () => {
 		<div className="body">
 		 {/* <img src="/images/arrow.png" alt="arrow" className="arrow" /> */}
 		 
-		 <div className="content">
+		 <div className="content px-5 lg:px-30">
 			<div className="space-y-5 hidden md:block">
 			 <p>Cool. Crisp. Classic.</p>
 			 <p className="subtitle">
@@ -122,4 +122,4 @@ const Hero = () => {
  );
 };
 
-export default Hero;
+export default Hero; 
