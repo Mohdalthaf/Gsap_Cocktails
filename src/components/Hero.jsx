@@ -86,9 +86,9 @@ const Hero = () => {
 		 className="right-leaf"
 		/>
 		
+		<img src="/images/arrow.png" alt="arrow" className="arrow" />
+
 		<div className="body">
-		 {/* <img src="/images/arrow.png" alt="arrow" className="arrow" /> */}
-		 
 		 <div className="content px-5 lg:px-30">
 			<div className="space-y-5 hidden md:block">
 			 <p>Cool. Crisp. Classic.</p>

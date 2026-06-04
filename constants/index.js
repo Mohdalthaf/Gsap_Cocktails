@@ -81,9 +81,6 @@ const navLinks = [
     {
        imgPath: "/images/profile3.png",
     },
-    {
-       imgPath: "/images/profile4.png",
-    },
    ];
    
    const featureLists = [

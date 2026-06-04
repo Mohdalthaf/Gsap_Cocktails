@@ -1,6 +1,7 @@
 import gsap from 'gsap';
 import { SplitText} from 'gsap/all'
 import { useGSAP } from '@gsap/react'
+import { featureLists, profileLists } from '../../constants/index.js'
 
 const About = () => {
  useGSAP(() => {
@@ -41,13 +42,37 @@ const About = () => {
 			 Every cocktail we serve is a reflection of our obsession with detail — from the first muddle to the final garnish. That care is what turns a simple drink into something truly memorable.
 			</p>
 			
-			<div>
-			 <p className="md:text-3xl text-xl font-bold">
-				<span>4.5</span>/5
-			 </p>
-			 <p className="text-sm text-white-100">
-				More than +12000 customers
-			 </p>
+			<div className="rating-block">
+			 <div className="rating-info">
+				<div className="rating-stars" aria-hidden="true">
+				 {Array.from({ length: 5 }).map((_, index) => (
+					<img key={index} src="/images/star-icon.png" alt="" />
+				 ))}
+				</div>
+				<p className="rating-score">
+				 <span>4.5</span>/5
+				</p>
+				<p className="rating-customers">
+				 More than +12000 customers
+				</p>
+			 </div>
+
+			 <div className="rating-divider" aria-hidden="true" />
+			 
+
+			 <div className="profile-stack">
+				<div className="noisy" />
+				<div className="profile-stack-avatars">
+				 {profileLists.map((profile) => (
+					<img
+					 key={profile.imgPath}
+					 src={profile.imgPath}
+					 alt=""
+					/>
+				 ))}
+				 <span className="profile-stack-count">+12k</span>
+				</div>
+			 </div>
 			</div>
 		 </div>
 		</div>
@@ -55,18 +80,29 @@ const About = () => {
 	 
 	 <div className="top-grid">
 		<div className="md:col-span-3">
-		 <div  className="noisy" />
+		 <div className="noisy" />
 		 <img src="/images/abt1.png" alt="grid-img-1" />
+		</div>
+
+		<div className="feature-card-cell md:col-span-3">
+			<div className="noisy" />
+				<div className="feature-card">
+					<h3>Crafted to Impress</h3>
+					<div className="feature-card-divider" aria-hidden="true" />
+					<ul className="feature-card-points">
+					{featureLists.map((point) => (
+						<li key={point}>
+						<img src="/images/check-icon.png" alt="" aria-hidden="true" />
+						<p>{point}</p>
+						</li>
+					))}
+					</ul>
+				</div>
 		</div>
 		
 		<div className="md:col-span-6">
-		 <div  className="noisy" />
+		 <div className="noisy" />
 		 <img src="/images/abt2.png" alt="grid-img-2" />
-		</div>
-		
-		<div className="md:col-span-3">
-		 <div  className="noisy" />
-		 <img src="/images/abt5.png" alt="grid-img-5" />
 		</div>
 	 </div>
 	 
