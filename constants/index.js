@@ -22,25 +22,25 @@ const navLinks = [
        name: "Chapel Hill Shiraz",
        country: "AU",
        detail: "Battle",
-       price: "$10",
+       price: "₹850",
     },
     {
        name: "Caten Malbee",
        country: "AU",
        detail: "Battle",
-       price: "$49",
+       price: "₹4,150",
     },
     {
        name: "Rhino Pale Ale",
        country: "CA",
        detail: "750 ml",
-       price: "$20",
+       price: "₹1,650",
     },
     {
        name: "Irish Guinness",
        country: "IE",
        detail: "600 ml",
-       price: "$29",
+       price: "₹2,400",
     },
    ];
    
@@ -49,25 +49,25 @@ const navLinks = [
        name: "Tropical Bloom",
        country: "US",
        detail: "Battle",
-       price: "$10",
+       price: "₹850",
     },
     {
        name: "Passionfruit Mint",
        country: "US",
        detail: "Battle",
-       price: "$49",
+       price: "₹4,150",
     },
     {
        name: "Citrus Glow",
        country: "CA",
        detail: "750 ml",
-       price: "$20",
+       price: "₹1,650",
     },
     {
        name: "Lavender Fizz",
        country: "IE",
        detail: "600 ml",
-       price: "$29",
+       price: "₹2,400",
     },
    ];
    
@@ -99,10 +99,10 @@ const navLinks = [
    
    const storeInfo = {
     heading: "Where to Find Us",
-    address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
+    address: "Door No. XIV/284, Ground Floor, MG Road, Ernakulam, Kochi, Kerala 682016",
     contact: {
-       phone: "(555) 987-6543",
-       email: "hello@jsmcocktail.com",
+       phone: "+91 98765 43210",
+       email: "hello@jsmcocktail.in",
     },
    };
    
